@@ -19,7 +19,7 @@ The following commands are available:
 - `frontend-spruce-up-page`: Improves UI/UX of a page
 - `security-scanner`: Scans code for security issues
 - `make-sure-it-builds`: Ensures the application builds successfully
-- `test-generator`: Generates tests for specified components
+- `test-generator`: Generates tests
 
 ## Getting Started
 
@@ -35,29 +35,35 @@ The following commands are available:
 
 3. Open [http://localhost:3000](http://localhost:3000) to view the playground
 
-## Development
-
-This project uses:
-- Next.js 14
-- TypeScript
-- Tailwind CSS
-- Various UI components (Radix UI, etc.)
 
 ## Running Commands
 
-To run a Claude command, use:
+To run a Claude command, open up Claude Code and use the following syntax:
 
 ```bash
-claude [command-name] [args]
+/[command-name] [args]
 ```
 
-For example:
+**Example 1:**
 ```bash
-claude frontend-spruce-up-page
+claude 
 ```
 
+Once you are in the coding agent:
+
 ```bash
-claude frontend-add-an-API-and-sample-page openai
+/frontend-spruce-up-page
+```
+
+**Example 2:**
+```bash
+claude 
+```
+
+Once you are in the coding agent:
+
+```bash
+/frontend-add-an-API-and-sample-page openai
 ```
 
 
@@ -65,6 +71,4 @@ claude frontend-add-an-API-and-sample-page openai
 ## Project Structure
 
 - `.claude/commands/`: Contains all the Claude command definitions
-- `src/app/`: Next.js application routes and pages
-- `src/components/`: Reusable UI components
-- `src/lib/`: Utility functions and shared code
+- `src/app/`: A sample playground next js page to test the commands

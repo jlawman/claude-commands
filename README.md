@@ -58,7 +58,7 @@ Once you are in the coding agent:
 claude 
 ```
 
-Once you are in the coding agent:
+Once you are in the coding agent using the add api route with a custom parameter (openai in this example):
 
 ```bash
 /frontend-add-an-API-and-sample-page openai

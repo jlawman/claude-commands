@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Claude Commands Playground
+
+This project serves as a development playground for testing and using Claude Commands. The site itself is a Next.js application that provides a UI for experimenting with different Claude command implementations.
+
+## Project Overview
+
+- **Purpose**: Create a sandbox environment for testing Claude commands
+- **Structure**: Next.js application with various pages to modify using Claude commands
+- **Focus**: The website itself is secondary - the primary focus is the Claude commands in `.claude/commands/`
+
+## Claude Commands
+
+The following commands are available:
+
+- `add-or-update-readme`: Updates README documentation
+- `code-review`: Performs code review on specified files
+- `frontend-add-an-API-and-sample-page`: Adds API endpoints and sample pages
+- `frontend-spruce-up-page`: Improves UI/UX of a page
+- `security-scanner`: Scans code for security issues
+- `test-generator`: Generates tests for specified components
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) to view the playground
+
+## Development
+
+This project uses:
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Various UI components (Radix UI, etc.)
+
+## Running Commands
+
+To run a Claude command, use:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+claude [command-name] [args]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+For example:
+```bash
+claude frontend-spruce-up-page
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+claude frontend-add-an-API-and-sample-page openai
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `.claude/commands/`: Contains all the Claude command definitions
+- `src/app/`: Next.js application routes and pages
+- `src/components/`: Reusable UI components
+- `src/lib/`: Utility functions and shared code

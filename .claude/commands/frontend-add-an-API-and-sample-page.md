@@ -1,4 +1,4 @@
-Ask the user for the tool API name (e.g. OpenAI, Anthropic, etc.).
+Ask the user for the tool API name (e.g. OpenAI, Anthropic, etc.). If the user passes in a tool name as a command line argument no need to ask for it.
 
 Create a simple route that sends information to the API that they mention and create a sample page under test/[tool-api-name]/page.tsx. 
 
@@ -6,4 +6,4 @@ The information received from the API should be displayed on the page. They may 
 
 This an app router project. Let's make the test page feel modern and up to date. You can use Tailwind CSS. 
 
-When you are done please communicate what API key needs to be set in the .env.local file.
+When you are done please communicate what API key needs to be set in the .env.local file. 

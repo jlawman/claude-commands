@@ -1,12 +1,6 @@
 # Claude Commands Playground
 
-This project serves as a development playground for testing and using Claude Commands. The site itself is a Next.js application that provides a UI for experimenting with different Claude command implementations.
-
-## Project Overview
-
-- **Purpose**: Create a sandbox environment for testing Claude commands
-- **Structure**: Next.js application with various pages to modify using Claude commands
-- **Focus**: The website itself is secondary - the primary focus is the Claude commands in `.claude/commands/`
+This project serves as a development playground for testing and using Claude Commands. The included site provides a simple UI for experimenting with the different Claude command implementations.
 
 ## Claude Commands
 
@@ -26,7 +20,7 @@ The following commands are available:
 In order to run the commands you simply need the .claude folder in your project (to make them available as project specific commands) or at the root directory (to make them available as personal commands across all claude code projects).
 
 
-## Running the test website
+## Running the playground website
 1. Install dependencies:
    ```bash
    npm install

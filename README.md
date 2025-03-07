@@ -12,11 +12,13 @@ This project serves as a development playground for testing and using Claude Com
 
 The following commands are available:
 
-- `add-or-update-readme`: Updates README documentation
+- `add-or-update-readme`: Updates README documentation. Pass in a focus as an argument to direct the generation.
+- `update-readme-based-on-diff`: Updates README based on git diffs
 - `code-review`: Performs code review on specified files
 - `frontend-add-an-API-and-sample-page`: Adds API endpoints and sample pages
 - `frontend-spruce-up-page`: Improves UI/UX of a page
 - `security-scanner`: Scans code for security issues
+- `make-sure-it-builds`: Ensures the application builds successfully
 - `test-generator`: Generates tests for specified components
 
 ## Getting Started

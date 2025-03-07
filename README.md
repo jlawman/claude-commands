@@ -21,8 +21,12 @@ The following commands are available:
 - `make-sure-it-builds`: Ensures the application builds successfully
 - `test-generator`: Generates tests
 
-## Getting Started
 
+## Adding the commands to Claude Code
+In order to run the commands you simply need the .claude folder in your project (to make them available as project specific commands) or at the root directory (to make them available as personal commands across all claude code projects).
+
+
+## Running the test website
 1. Install dependencies:
    ```bash
    npm install

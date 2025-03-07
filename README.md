@@ -12,7 +12,7 @@ The following commands are available:
 - `frontend-add-an-API-and-sample-page`: Adds API endpoints and sample pages
 - `frontend-spruce-up-page`: Improves UI/UX of a page
 - `security-scanner`: Scans code for security issues
-- `make-sure-it-builds`: Ensures the application builds successfully
+- `make-sure-it-builds`: Ensures the application builds successfully (attempts to fix every error in npm run build and continue to run npm run build until it succeeds)
 - `test-generator`: Generates tests
 
 
